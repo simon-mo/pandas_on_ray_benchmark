@@ -1,0 +1,13 @@
+diff --git a/python/ray/dataframe/__init__.py b/python/ray/dataframe/__init__.py
+index f59805e..e3f8994 100644
+--- a/python/ray/dataframe/__init__.py
++++ b/python/ray/dataframe/__init__.py
+@@ -55,6 +55,7 @@ __all__ = [
+ try:
+     if threading.current_thread().name == "MainThread":
+         import ray
+-        ray.init()
++        import os
++        ray.init(num_cpus=os.environ.get('PD_ON_RAY_CPU'))
+ except AssertionError:
+     pass
