@@ -1,0 +1,1 @@
+{"runner": "pandas", "data": "data/coarse_wide.pq", "expr": "df.sum()", "num_cpus": 1, "result": 4.85120701789856}

@@ -1,0 +1,1 @@
+{"runner": "ray", "data": "data/coarse_wide.pq", "expr": "df.sum(axis=1)", "num_cpus": 8, "result": 7.40525484085083}

@@ -1,0 +1,1 @@
+{"runner": "pandas", "data": "data/fine_tall.pq", "expr": "df.sum()", "num_cpus": 4, "result": 4.1154866218566895}
